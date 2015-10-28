@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">DetailedIntroduction</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="very_satisfied_with">非常满意</string>
+    <string name="satisfied_with_the">满意</string>
+    <string name="general">一般</string>
+    <string name="not_satisfied_with">不满意</string>
+    <string name="could_you_please_evaluate_my_service">请您对我的服务评价</string>
+    <string name="comments">我要评论</string>
+    <string name="agentid">工号:</string>
+
+</resources>

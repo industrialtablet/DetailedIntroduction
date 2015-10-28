@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/alllayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="7dip"
+        android:layout_marginRight="7dip"
+        android:layout_marginTop="10dip"
+        android:background="#FFFFFF"
+        tools:ignore="UselessParent" >
+
+        <RelativeLayout
+            android:id="@+id/imglayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="18sp"
+                android:textColor="#000000" />
+            <TextView
+                android:id="@+id/tv_position"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_name"
+                android:textSize="18sp"
+                android:gravity="center"
+                android:paddingTop="3dip"
+                android:textColor="#000000" />
+
+            <RelativeLayout
+                android:id="@+id/rl"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/tv_position"
+                >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="170dip"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/top_bg"
+                    android:layout_marginRight="5dip"
+                    android:padding="8dip"
+                    android:layout_marginLeft="5dip">
+
+                    <com.example.uitl.RoundAngleImageView
+                        android:id="@+id/imgdetail"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerInParent="true"
+                        tools:ignore="ContentDescription" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rl"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingBottom="5dip"
+                android:paddingTop="10dip" >
+
+                <ImageView
+                    android:id="@+id/star1"
+                    android:layout_width="22dip"
+                    android:layout_height="22dip"
+                    android:layout_marginLeft="3dip"
+                    android:layout_marginRight="3dip"
+                    android:background="@drawable/star_no"
+                    android:contentDescription="@null" />
+
+                <ImageView
+                    android:id="@+id/star2"
+                    android:layout_width="22dip"
+                    android:layout_height="22dip"
+                    android:layout_marginLeft="3dip"
+                    android:layout_marginRight="3dip"
+                    android:background="@drawable/star_no"
+                    android:contentDescription="@null" />
+
+                <ImageView
+                    android:id="@+id/star3"
+                    android:layout_width="22dip"
+                    android:layout_height="22dip"
+                    android:layout_marginLeft="3dip"
+                    android:layout_marginRight="3dip"
+                    android:background="@drawable/star_no"
+                    android:contentDescription="@null" />
+
+                <ImageView
+                    android:id="@+id/star4"
+                    android:layout_width="22dip"
+                    android:layout_height="22dip"
+                    android:layout_marginLeft="3dip"
+                    android:layout_marginRight="3dip"
+                    android:background="@drawable/star_no"
+                    android:contentDescription="@null" />
+
+                <ImageView
+                    android:id="@+id/star5"
+                    android:layout_width="22dip"
+                    android:layout_height="22dip"
+                    android:layout_marginLeft="3dip"
+                    android:layout_marginRight="3dip"
+                    android:background="@drawable/star_no"
+                    android:contentDescription="@null" />
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

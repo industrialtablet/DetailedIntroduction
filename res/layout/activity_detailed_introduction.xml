@@ -1,0 +1,159 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+     android:layout_marginBottom="280dip"
+    android:layout_marginLeft="775dip"
+    android:layout_marginRight="455dip"
+    android:layout_marginTop="400dip"
+    tools:context="com.example.activity.DetailedIntroduction" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        tools:ignore="UselessParent,DisableBaselineAlignment" >
+
+        <FrameLayout
+            android:id="@+id/frame"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="4" >
+
+            <include
+                android:id="@+id/image"
+                layout="@layout/image"
+                android:visibility="invisible" />
+
+            <include
+                android:id="@+id/video"
+                layout="@layout/video"
+                android:visibility="invisible" />
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#595959"
+            android:orientation="vertical" >
+
+            <com.example.uitl.RoundAngleImageView
+                android:id="@+id/top"
+                android:layout_width="match_parent"
+                android:layout_height="0dip"
+                android:layout_weight="8"
+                android:background="#aaaaaa"
+                android:contentDescription="@null"
+                android:layout_marginTop="5dip"
+                android:layout_marginRight="5dip"
+                android:layout_marginLeft="5dip"
+                tools:ignore="NestedWeights" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dip"
+                android:layout_weight="3"
+                android:background="@drawable/white_bg"
+                android:orientation="vertical"
+                android:gravity="center_horizontal"
+                android:layout_marginLeft="3dip"
+                android:layout_marginRight="3dip"
+                android:layout_marginTop="3dip"
+                >
+                <TextView 
+                    android:id="@+id/name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dip"
+                    android:layout_weight="1"
+                    android:textColor="#000000"
+                    />
+                <TextView 
+                    android:id="@+id/professional"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dip"
+                    android:layout_weight="1"
+                    android:textColor="#000000"
+                    />
+                <LinearLayout 
+                    android:layout_width="match_parent"
+                    android:layout_height="20dip"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    >
+                    <ImageView 
+                        android:id="@+id/star1"
+                        android:layout_width="15dip"
+                        android:layout_height="15dip"
+                        android:background="@drawable/star_no"
+                        android:contentDescription="@null"
+                        />
+                    <ImageView 
+                        android:id="@+id/star2"
+                        android:layout_width="15dip"
+                        android:layout_height="15dip"
+                        android:background="@drawable/star_no"
+                        android:contentDescription="@null"
+                        />
+                    <ImageView 
+                        android:id="@+id/star3"
+                        android:layout_width="15dip"
+                        android:layout_height="15dip"
+                        android:background="@drawable/star_no"
+                        android:contentDescription="@null"
+                        />
+                    <ImageView 
+                        android:id="@+id/star4"
+                        android:layout_width="15dip"
+                        android:layout_height="15dip"
+                        android:background="@drawable/star_no"
+                        android:contentDescription="@null"
+                        />
+                    <ImageView 
+                        android:id="@+id/star5"
+                        android:layout_width="15dip"
+                        android:layout_height="15dip"
+                        android:background="@drawable/star_no"
+                        android:contentDescription="@null"/>
+                </LinearLayout>
+            </LinearLayout>
+            
+            <TextView
+                android:id="@+id/introduction_content"
+                android:layout_width="match_parent"
+                android:layout_height="0dip"
+                android:layout_weight="7"
+                android:padding="5dip" />
+            
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dip"
+                android:layout_weight="3"
+                android:gravity="center_horizontal"
+                android:onClick="click"
+                android:clickable="true"
+                android:focusable="true"
+                android:orientation="vertical" >
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dip"
+                    android:background="#cccccc" />
+
+                <ImageView
+                    android:layout_width="30dip"
+                    android:layout_height="30dip"
+                    android:layout_marginTop="5dip"
+                    android:background="@drawable/hand"
+                    tools:ignore="ContentDescription" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/comments"
+                    android:textColor="#FFFFFF" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

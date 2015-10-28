@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="280dip"
+    android:layout_marginLeft="775dip"
+    android:layout_marginRight="455dip"
+    android:layout_marginTop="400dip"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/myView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="UselessParent" >
+
+        <com.example.uitl.ScrollLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/ScrollLayoutTest"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:background="#6B6B6B"
+            android:layout_marginLeft="-7dip"
+            android:layout_marginRight="-7dip"
+            android:gravity="center" >
+        </com.example.uitl.ScrollLayout>
+
+        <com.example.uitl.PageControlView
+            android:id="@+id/pageControl"
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:layout_alignParentBottom="true"
+            android:gravity="center" />
+    </RelativeLayout>
+
+</LinearLayout>
